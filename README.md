@@ -12,6 +12,6 @@ luci-app-firewall
 
 luci-app-ssr-plus (Xray Core 1.5.7,Hysteria 1.0.5)
 
-luci-app-turboacc (BBR CCA)
+luci-app-turboacc (Shortcut-FE for ECM,BBR CCA)
 
 luci-theme-bootstrap
