@@ -71,17 +71,6 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
-    - name: Update luci-app-ssr-plus xray-core hysteria
-      run: |
-        cd openwrt
-        git clone https://github.com/fw876/helloworld.git temp1
-        cp -rf ./temp1/luci-app-ssr-plus ./package
-        cp -rf ./temp1/xray-core ./package
-        cp -rf ./temp1/hysteria ./package
-        cp -rf ./temp1/dns2tcp ./package
-        cp -rf ./temp1/tcping ./package
-        rm -rf temp1
-
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
