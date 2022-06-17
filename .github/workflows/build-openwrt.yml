@@ -80,7 +80,7 @@ jobs:
         cp -rf ./temp1/hysteria ./package
         cp -rf ./temp1/dns2tcp ./package
         cp -rf ./temp1/tcping ./package
-        cp -rf ./temp1/shadowsocksr-libev-ssr-check ./package
+        cp -rf ./temp1/shadowsocksr-libev ./package
         rm -rf temp1
 
     - name: Install feeds
