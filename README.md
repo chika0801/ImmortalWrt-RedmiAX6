@@ -1,6 +1,6 @@
 Default login address: **192.168.10.1**, username: **root**, password: **password**.
 
-## 2022-06-17 Build OpenWrt #5: Manually run by chika0801
+## 2022-06-17 Build OpenWrt #6: Manually run by chika0801
 
 autocore-arm
 
@@ -12,6 +12,6 @@ luci-app-firewall
 
 luci-app-ssr-plus (Xray Core 1.5.7,Hysteria 1.0.5)
 
-luci-app-turboacc (Shortcut-FE for ECM,BBR CCA)
+luci-app-turboacc (BBR CCA)
 
 luci-theme-bootstrap
