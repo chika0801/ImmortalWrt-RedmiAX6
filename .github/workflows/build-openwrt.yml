@@ -20,7 +20,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/admin6750217/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
@@ -70,6 +70,15 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
+
+    - name: Update luci-app-ssr-plus xray-core hysteria
+      run: |
+        cd openwrt
+        git clone https://github.com/fw876/helloworld.git temp1
+        cp -rf ./temp1/luci-app-ssr-plus ./package
+        cp -rf ./temp1/xray-core ./package
+        cp -rf ./temp1/hysteria ./package
+        rm -rf temp1
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
