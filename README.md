@@ -1,7 +1,5 @@
 Default login address: **192.168.10.1**, username: **root**, password: **password**.
 
-## 2022-06-19 Build OpenWrt #9: Manually run by chika0801
-
 autocore-arm
 
 ipv6helper
