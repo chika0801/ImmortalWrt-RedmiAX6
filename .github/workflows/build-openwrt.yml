@@ -74,11 +74,11 @@ jobs:
     - name: Update ssrp
       run: |
         cd openwrt
-        rm -rf ./package/emortal/luci-app-ssr-plus
+        rm -rf ./feeds/luci/applications/luci-app-ssr-plus
         rm -rf ./feeds/packages/net/xray-core
         rm -rf ./feeds/packages/net/hysteria
         git clone https://github.com/fw876/helloworld.git temp1
-        cp -rf ./temp1/luci-app-ssr-plus ./package/emortal
+        cp -rf ./temp1/luci-app-ssr-plus ./feeds/luci/applications
         cp -rf ./temp1/xray-core ./feeds/packages/net
         cp -rf ./temp1/hysteria ./feeds/packages/net
         rm -rf temp1
