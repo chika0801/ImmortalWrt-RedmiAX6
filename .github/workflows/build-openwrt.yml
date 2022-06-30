@@ -71,7 +71,7 @@ jobs:
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
 
-    - name: Update ssrp
+    - name: Update luci-app-ssr-plus
       run: |
         cd openwrt
         rm -rf ./feeds/luci/applications/luci-app-ssr-plus
@@ -83,7 +83,7 @@ jobs:
         cp -rf ./temp1/hysteria ./feeds/packages/net
         rm -rf temp1
 
-    - name: Delete argon
+    - name: Delete luci-theme-argon
       run: |
         cd openwrt
         rm -rf ./package/emortal/luci-theme-argon
