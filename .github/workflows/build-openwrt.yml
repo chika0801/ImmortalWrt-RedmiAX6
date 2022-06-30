@@ -20,8 +20,8 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/admin6750217/lede
-  REPO_BRANCH: master
+  REPO_URL: https://github.com/1715173329/imoutowrt
+  REPO_BRANCH: master-ax3000-5.15
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
   DIY_P1_SH: diy-part1.sh
@@ -70,6 +70,18 @@ jobs:
 
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
+
+    - name: Update ssrp
+      run: |
+        cd openwrt
+        rm -rf ./package/emortal/luci-app-ssr-plus
+        rm -rf ./feeds/packages/net/xray-core
+        rm -rf ./feeds/packages/net/hysteria
+        git clone https://github.com/fw876/helloworld.git temp1
+        cp -rf ./temp1/luci-app-ssr-plus ./package/emortal
+        cp -rf ./temp1/xray-core ./feeds/packages/net
+        cp -rf ./temp1/hysteria ./feeds/packages/net
+        rm -rf temp1
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
