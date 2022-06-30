@@ -74,6 +74,7 @@ jobs:
     - name: Update luci-app-ssr-plus
       run: |
         cd openwrt
+        rm -rf ./package/emortal/luci-app-ssr-plus
         rm -rf ./feeds/luci/applications/luci-app-ssr-plus
         rm -rf ./feeds/packages/net/xray-core
         rm -rf ./feeds/packages/net/hysteria
