@@ -11,3 +11,5 @@ luci-app-opkg
 luci-app-ssr-plus (Xray 1.5.8,Hysteria 1.0.5)
 
 luci-app-turboacc (Flow Offload,BBR CCA)
+
+luci-theme-bootstrap
