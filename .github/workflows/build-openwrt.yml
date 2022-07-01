@@ -93,6 +93,14 @@ jobs:
         cp -rf ./luci-theme-argon ./feeds/luci/themes
         rm -rf luci-theme-argon
 
+    - name: Update luci-app-argon-config
+      run: |
+        cd openwrt
+        rm -rf ./package/emortal/luci-app-argon-config
+        git clone https://github.com/jerrykuku/luci-app-argon-config.git luci-app-argon-config
+        cp -rf ./luci-app-argon-config ./feeds/luci/applications
+        rm -rf luci-app-argon-config
+
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
 
