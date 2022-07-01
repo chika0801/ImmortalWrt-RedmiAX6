@@ -1,5 +1,7 @@
 Default login address: **192.168.10.1**, username: **root**, password: **password**.
 
+## Build OpenWrt #19: Manually run by chika0801
+
 ipv6helper
 
 luci-app-cpufreq
