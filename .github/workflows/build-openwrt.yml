@@ -84,14 +84,14 @@ jobs:
         cp -rf ./helloworld/hysteria ./feeds/packages/net
         rm -rf helloworld
 
-#    - name: Update luci-theme-argon
-#      run: |
-#        cd openwrt
-#        rm -rf ./package/emortal/luci-theme-argon
-#        rm -rf ./feeds/luci/themes/luci-theme-argon
-#        git clone https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
-#        cp -rf ./luci-theme-argon ./feeds/luci/themes
-#        rm -rf luci-theme-argon
+    - name: Update luci-theme-argon
+      run: |
+        cd openwrt
+        rm -rf ./package/emortal/luci-theme-argon
+        rm -rf ./feeds/luci/themes/luci-theme-argon
+        git clone https://github.com/jerrykuku/luci-theme-argon.git luci-theme-argon
+        cp -rf ./luci-theme-argon ./feeds/luci/themes
+        rm -rf luci-theme-argon
 
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a
