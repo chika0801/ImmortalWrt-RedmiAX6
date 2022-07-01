@@ -12,6 +12,6 @@ luci-app-ssr-plus (Xray 1.5.8,Hysteria 1.0.5)
 
 luci-app-turboacc (Flow Offload,BBR CCA)
 
-luci-theme-argon
+luci-theme-argon 2.2.9.4 
 
 luci-theme-bootstrap
