@@ -2,6 +2,8 @@ Default login address: **192.168.10.1**, username: **root**, password: **passwor
 
 ipv6helper
 
+luci-app-argon-config
+
 luci-app-cpufreq
 
 luci-app-firewall
