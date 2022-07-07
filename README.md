@@ -8,12 +8,6 @@ luci-app-ssr-plus 20220707
 
 Hysteria 1.1.0
 
-## Build OpenWrt #20:
-
-Update:
-
-luci-app-ssr-plus 20220705
-
 ## Build OpenWrt #19:
 
 ipv6helper
