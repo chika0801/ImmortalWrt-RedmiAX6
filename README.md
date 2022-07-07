@@ -4,6 +4,8 @@ Default login address: **192.168.10.1**, username: **root**, password: **passwor
 
 Update:
 
+luci-app-ssr-plus 20220707
+
 Hysteria 1.1.0
 
 ## Build OpenWrt #20:
