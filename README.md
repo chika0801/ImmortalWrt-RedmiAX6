@@ -1,6 +1,13 @@
 Default login address: **192.168.10.1**, username: **root**, password: **password**.
 
-## Build OpenWrt #21:
+## Build OpenWrt #23:
+Update:
+
+luci-app-ssr-plus 20220717
+
+Xray 1.5.9
+
+## Build OpenWrt #22:
 
 Update:
 
